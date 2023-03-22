@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import axios from "axios";
 
 export const AllProducts = (props) => {
@@ -55,7 +55,7 @@ export const AllProducts = (props) => {
     return (
     <div>
         <div className="w-50 p-4 rounded mx-auto shadow mt-4">
-            <h1 className="text-center">Product Manger</h1>
+            <h3 className="text-center">Add a product</h3>
             <form onSubmit={(event) =>{
                 handleNewProductSubmit(event)
             }}>
@@ -89,7 +89,7 @@ export const AllProducts = (props) => {
 
                     return (
                         <div className="shadow mb-4 rounded border p-4 text-center" key={i}>
-                            <h2>{title}</h2>
+                            <h2><Link to={`/product/${_id}`}>{title}</Link></h2>
                             <h5>Price: ${price}</h5>
                             <p>Description: {description}</p>
                         </div>

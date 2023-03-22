@@ -19,6 +19,10 @@ export const OneProduct = (props) => {
         })
     }, [id]);
 
+    if (product === null){
+        return <h1>Loading...Pleast Wait!</h1>
+    }
+
     const { _id, title, price, description } = product;
 
     return (
