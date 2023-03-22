@@ -13,8 +13,8 @@ import './App.css';
 function App() {
   return (
     <div className="container">
-      <nav className='navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-center mb-4'>
-      <h1 className="navbar-brand mb-0">Product Manager</h1>
+      <nav className='navbar navbar-expand-lg navbar-light bg-light sticky-top justify-content-between mb-4 px-4 rounded border'>
+      <h1 className="navbar-brand mb-0 fs-1">Product Manager</h1>
       <div className='navbar-nav'>
         <Link to="/" className='btn btn-primary mx-1'>Home</Link>
       </div>
